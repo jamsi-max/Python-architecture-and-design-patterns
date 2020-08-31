@@ -1,6 +1,3 @@
-# import os
-# import sys
-
 from routes import routes
 from controllers import PageNotFound
 
@@ -22,10 +19,6 @@ class App:
         start_response(code, [('Content-Type', 'text/html')])
         return body
 
-        # code, body = view()
-        # start_response(code, [('Content-Type', 'text/html')])
-        # return body
-
     def _route_validate(self):
         for item in self.routes:
             if not item.endswith('/'):
@@ -38,8 +31,5 @@ class App:
             return path.split('/')[-1] + '/'
         return path
 
-
-# if os.path.exists('templates'):
-#     sys.path.append(os.getcwd()+'/templates')
 
 app = App(routes)
