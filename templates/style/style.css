@@ -3,8 +3,13 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+    margin: 0;
     font-family: sans-serif;
+    /*logo*/
+    text-align: center;
+    box-sizing:  border-box;
+    background: radial-gradient(ellipse at center, rgba(245,247,250,1) 0%, rgba(230,233,237,1) 100%);
+    /*logo*/
 }
 h1{
     margin-top: 5%;
@@ -56,23 +61,28 @@ a:hover{
 }
 .contact-form-input,
 .contact-form-textarea{
-    border: 2px solid #03A9F4;
+    border: 2px solid #6e747782;
     padding: 3%;
     resize: none;
+    background: none;
+    box-sizing: border-box;
 }
 .contact-form-input:focus,
 .contact-form-textarea:focus{
     outline: none;
     border-color: #FF9800;
 }
+.contact-form-input:active{
+    background: none;
+}
 .contact-form-btn-submit{
-    border: 2px solid #03A9F4;
+    border: 2px solid #6e747782;
     padding: 3%;
     width: 50%;
     margin: 3% auto;
     background: none;
     text-transform: uppercase;
-    color: #03A9F4;
+    color: #6e747782;
     outline: none;
 }
 .contact-form-btn-submit:hover{
@@ -83,3 +93,12 @@ a:hover{
 /*.contact-form-btn-submit:active{*/
 /*    outline: none;*/
 /*}*/
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+svg {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
