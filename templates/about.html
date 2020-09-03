@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
+    <title>{{ context.title }}</title>
+    <style>{{ context.style }}</style>
 </head>
 <body>
+    <div class="main-menu">
+        <ul>
+            <li><a href="/">Main</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+        </ul>
+    </div>
+
     <h1>About us</h1>
-    <ul>
-        <li>Address: {{ context.address }}</li>
-        <li>Tel: {{ context.tel }}</li>
+
+    <ul class="about-info">
+        <li class="about-info-item">Address: {{ context.address }}</li>
+        <li class="about-info-item">Tel: {{ context.tel }}</li>
     </ul>
 </body>
 </html>

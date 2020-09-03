@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ context.title }}</title>
+    <style>{{ context.style }}</style>
 </head>
 <body>
-    <h1>{{ context.title }}</h1>
+    <div class="main-menu">
+        <ul>
+            <li><a href="/">Main</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h1 class="title">{{ context.title }}</h1>
+    </div>
 </body>
 </html>

@@ -1,6 +1,7 @@
-from controllers import Index, About
+from controllers import Index, About, Contacts
 
 routes = {
     '/': Index(),
-    'about/': About()
+    'about/': About(),
+    'contacts/': Contacts(),
 }
