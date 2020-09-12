@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ context.title }}</title>
-    <style>{{ context.style }}</style>
-</head>
-<body>
-    <div class="main-menu">
-        <ul>
-            <li><a href="/">Main</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contacts">Contacts</a></li>
-        </ul>
-    </div>
+{% extends 'index.html' %}
 
-    <h1>Feedback</h1>
+{% block content %}
     <div class="block-contact">
         <form class="block-contact-form" method="post" enctype="text/plain">
             <input class="contact-form-input" type="email" placeholder="Email" name="email">
@@ -23,6 +9,4 @@
             <input class="contact-form-btn-submit" type="submit" value="send">
         </form>
     </div>
-
-</body>
-</html>
+{% endblock %}

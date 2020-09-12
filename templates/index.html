@@ -7,12 +7,12 @@
 </head>
 <body>
     {% include './includes/main_menu.html' %}
-
     <div>
         <h1 class="title">{{ context.title }}</h1>
     </div>
 
-    {% include './includes/logo.html' %}
-
+    {% block content %}
+        {% include './includes/logo.html' %}
+    {% endblock %}
 </body>
 </html>

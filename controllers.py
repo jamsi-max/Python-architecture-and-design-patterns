@@ -32,7 +32,7 @@ class About:
 class Contacts:
     def __call__(self):
         content = {
-            'title': 'Contacts',
+            'title': 'Feedback',
             'style': get_style('templates/style/style.css')
         }
         return '200 OK', [render('contacts.html', context=content).encode('utf-8')]
